@@ -1,0 +1,176 @@
+:root {
+    /* colors */
+    --clr-white: 0 0% 100%;
+    --clr-light-gray: 212 45% 89%;
+    --clr-grayish-blue: 220 15% 55%;
+    --clr-dark-blue: 218 44% 22%;
+    --clr-blue: 216.4 95.4% 57.6%;
+
+    /* font-sizes */
+    --fs-700: 1.375rem;
+    --fs-400: 0.9375rem;
+
+    /* font-families */
+    --ff-sans-normal: 'Outfit', sans-serif;
+}
+
+/* colors */
+.bg-light-gray {
+    background-color: hsl(var(--clr-light-gray));
+}
+
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.text-dark-blue {
+    color: hsl(var(--clr-dark-blue));
+}
+
+.text-grayish-blue {
+    color: hsl(var(--clr-grayish-blue));
+}
+
+/* typography */
+.ff-sans-normal {
+    font-family: var(--ff-sans-normal);
+}
+
+.letter-spacing-1 {
+    letter-spacing: 0.1875px;
+}
+
+.fs-700 {
+    font-size: var(--fs-700);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.card {
+    height: 31.0625rem;
+    width: 20rem;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 1.563rem 1.563rem rgba(0, 0, 0, 0.0476518);
+    border-radius: 1.25rem;
+}
+
+.qr-code {
+    width: 18rem;
+    height: 18rem;
+    background: #2C7DFA;
+    border-radius: 0.625rem;
+}
+
+.card h1 {
+    line-height: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+.card p {
+    line-height: 1.1875rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    font-size: 0.6875rem;
+    text-align: center;
+    color: hsl(var(--clr-dark-blue));
+}
+
+.attribution a {
+    color: hsl(var(--clr-blue));
+}
+
+.typing-text {
+    width: 45ch;
+    animation: typing 3.5s steps(45), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
