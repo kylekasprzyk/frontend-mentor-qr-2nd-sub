@@ -5,7 +5,7 @@
   <h2>
     <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"><strong>Frontend Mentor Challenge</strong></a>  </h2>
     <p>
-    <a href="#">My Solution</a>
+    <a href="https://kylekasprzyk.github.io/frontend-mentor-qr-2nd-sub/">My Solution</a>
   </p>
 </div>
 
