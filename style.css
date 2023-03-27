@@ -149,11 +149,6 @@ h6 {
     margin-bottom: 1rem;
     font-size: 0.6875rem;
     text-align: center;
-    color: hsl(var(--clr-dark-blue));
-}
-
-.attribution a {
-    color: hsl(var(--clr-blue));
 }
 
 .typing-text {
